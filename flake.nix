@@ -18,8 +18,8 @@
               config.vim = {
                 theme = {
                   enable = true;
-                  name = "gruvbox";
-                  style = "dark";
+                  name = "tokyonight";
+                  style = "night";
                 };
 
                 statusline.lualine.enable = true;
