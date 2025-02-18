@@ -16,15 +16,23 @@
           modules = [
             {
               config.vim = {
-                # Enable custom theming options
-                theme.enable = true;
+                theme = {
+                  enable = true;
+                  name = "gruvbox";
+                  style = "dark";
+                };
 
-                # Enable Treesitter
-                tree-sitter.enable = true;
+                statusline.lualine.enable = true;
+                telescope.enable = true;
+                autocomplete.nvim-cmp.enable = true;
+                languages = {
+                  enableLSP = true;
+                  enableTreesitter = true;
 
-                # Other options will go here. Refer to the config
-                # reference in Appendix B of the nvf manual.
-                # ...
+                  nix.enable = true;
+                  ts.enable = true;
+                  rust.enable = true;
+                };
               };
             }
           ];
