@@ -55,6 +55,7 @@
                     norgPackage = pkgs.vimPlugins.nvim-treesitter.builtGrammars.norg;  # Use the norg treesitter package
                   };
                 };
+                utility.vim-wakatime.enable = true;
 
                 # Enable image.nvim integration with Neorg
                 utility.images.image-nvim = {
