@@ -18,12 +18,32 @@
               config.vim = {
                 theme = {
                   enable = true;
-                  name = "tokyonight";
-                  style = "night";
+                  name = "base16";  # Ativa o suporte a cores personalizadas
+                   base16-colors = {
+                    base00 = "#1c0c28"; # Deep aubergine background (unchanged)
+                    base01 = "#301b4d"; # Rich deep purple background
+                    base02 = "#432775"; # Bold purple mid-background
+                    base03 = "#5c3a9e"; # Vivid purple for comments
+                    base04 = "#7b52c7"; # Bright medium purple for highlights
+                    base05 = "#00D2F7"; # Bright cyan for primary text (unchanged)
+                    base06 = "#59c7ff"; # Sky blue for soft highlights
+                    base07 = "#ffffff"; # Pure white for maximum contrast
+                    base08 = "#8f45ff"; # Bold violet-purple for warnings/errors
+                    base09 = "#8AA3FE"; # Deep azure-cyan for accents
+                    base0A = "#6d4db8"; # Royal purple for highlights/warnings
+                    base0B = "#00D974"; # Deep cyan for success
+                    base0C = "#00ddff"; # Bright cyan for additional accent
+                    base0D = "#4264d9"; # Indigo blue for links/selections
+                    base0E = "#9963ff"; # Bright purple for emphasis/keywords
+                    base0F = "#7640cc"; # Deep violet-purple for special elements
+                  };
+                  transparent = false;  # Define se o fundo deve ser transparente
                 };
 
                 statusline.lualine.enable = true;
+                tabline.nvimBufferline.enable = true;
                 telescope.enable = true;
+                filetree.neo-tree.enable = true;
                 autocomplete.nvim-cmp.enable = true;
                 languages = {
                   enableLSP = true;
@@ -32,6 +52,7 @@
                   nix.enable = true;
                   ts.enable = true;
                   rust.enable = true;
+                  markdown.enable = true;
                 };
 
                 # Add the vim-tidal plugin
@@ -62,7 +83,7 @@
                   setupOpts = {
                     integrations = {
                       neorg = {
-                        enable = true;  # Enable image.nvim in Neorg files
+                        enable = true;  # Enable image.nvim in Neorg filesh
                         clearInInsertMode = false;  # Whether to clear images in insert mode
                         downloadRemoteImages = false;  # Whether to download remote images
                         filetypes = [ "neorg" ];  # Filetypes to enable image.nvim in
