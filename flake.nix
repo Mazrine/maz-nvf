@@ -42,7 +42,6 @@
 
                 statusline.lualine.enable = true;
                 tabline.nvimBufferline.enable = true;
-                assistant.codecompanion-nvim.enable = true;
                 telescope.enable = true;
                 filetree.neo-tree.enable = true;
                 autocomplete.nvim-cmp.enable = true;
