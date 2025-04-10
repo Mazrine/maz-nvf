@@ -16,8 +16,15 @@
           modules = [
             {
               config.vim = {
+                options = {
+                  wrap = true;
+                  linebreak = true;
+                  breakindent = true;
+                  showbreak = "↪ ";
+                };
                 theme = {
                   enable = true;
+                  
                   name = "base16";  # Ativa o suporte a cores personalizadas
                    base16-colors = {
                     base00 = "#1c0c28"; # Deep aubergine background (unchanged)
@@ -40,10 +47,22 @@
                   transparent = false;  # Define se o fundo deve ser transparente
                 };
 
+                ui.colorizer.enable = true;
+                git.gitsigns.enable = true;
+                notify.nvim-notify.enable = true;
+
+                lsp.lspsaga.enable = true;
                 statusline.lualine.enable = true;
                 tabline.nvimBufferline.enable = true;
                 telescope.enable = true;
-                filetree.neo-tree.enable = true;
+                filetree.neo-tree = {
+                  enable = true;
+                  setupOpts = {
+                    window = {
+                      position = "right";  # "left", "right", "top", or "bottom"
+                    };
+                  };
+                };
                 autocomplete.nvim-cmp.enable = true;
                 languages = {
                   enableLSP = true;
