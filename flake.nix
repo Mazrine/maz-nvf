@@ -16,12 +16,16 @@
           modules = [
             {
               config.vim = {
+                globals.maplocalleader = " ";
+
                 options = {
+                  
                   wrap = true;
                   linebreak = true;
                   breakindent = true;
                   showbreak = "↪ ";
                 };
+                
                 theme = {
                   enable = true;
                   
