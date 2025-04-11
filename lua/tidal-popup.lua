@@ -1,6 +1,7 @@
-local M = {}
+-- tidal-popup.lua
+_G.tidal_popup = {}
 
-function M.show()
+function _G.tidal_popup.show()
   local buf = vim.api.nvim_create_buf(false, true)
   local lines = {
     "TidalCycles Cheat Sheet:",
@@ -29,5 +30,3 @@ function M.show()
 
   vim.api.nvim_open_win(buf, true, opts)
 end
-
-return M

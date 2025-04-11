@@ -20,7 +20,7 @@
                   {
                     mode = "n";
                     key = "<localleader>th";
-                    action = ":lua require('tidal-popup').show()<CR>";
+                    action = ":lua TidalPopupShow()<CR>";
                   }
                 ];
 
