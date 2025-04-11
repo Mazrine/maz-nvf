@@ -19,14 +19,14 @@
                 keymaps = [
                   {
                     mode = "n";
-                    key = "<leader>th";
-                    action = ":lua require('tidal_popup').show()<CR>";
+                    key = "<localleader>th";
+                    action = ":lua require('tidal-popup').show()<CR>";
                   }
                 ];
 
 
                 extraLuaFiles = [
-                  ./scripts/tidal-popup.lua 
+                  ./lua/tidal-popup.lua 
                 ];
 
                 globals.maplocalleader = " ";
