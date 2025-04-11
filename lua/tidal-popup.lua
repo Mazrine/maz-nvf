@@ -1,7 +1,5 @@
--- tidal-popup.lua
-_G.tidal_popup = {}
-
-function _G.tidal_popup.show()
+-- lua/tidal-popup.lua
+_G.TidalPopupShow = function()
   local buf = vim.api.nvim_create_buf(false, true)
   local lines = {
     "TidalCycles Cheat Sheet:",
