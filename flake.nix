@@ -16,6 +16,19 @@
           modules = [
             {
               config.vim = {
+                keymaps = [
+                  {
+                    mode = "n";
+                    key = "<leader>th";
+                    action = ":lua require('tidal_popup').show()<CR>";
+                  }
+                ];
+
+
+                extraLuaFiles = [
+                  ./scripts/tidal-popup.lua 
+                ];
+
                 globals.maplocalleader = " ";
 
                 options = {
