@@ -67,7 +67,7 @@
                 ui.colorizer.enable = true;
                 git.gitsigns.enable = true;
                 notify.nvim-notify.enable = true;
-
+                comments.comment-nvim.enable = true;
                 lsp.lspsaga.enable = true;
                 statusline.lualine.enable = true;
                 tabline.nvimBufferline.enable = true;
