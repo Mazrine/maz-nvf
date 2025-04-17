@@ -36,6 +36,7 @@
                   wrap = true;
                   linebreak = true;
                   breakindent = true;
+                  tabstop = 4;
                   showbreak = "↪ ";
                 };
                 
