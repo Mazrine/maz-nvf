@@ -197,6 +197,7 @@
       "inputs": {
         "nixpkgs": "nixpkgs",
         "nvf": "nvf",
+        "strudel-nvim": "strudel-nvim",
         "tidalcycles": "tidalcycles"
       }
     },
@@ -219,6 +220,22 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "strudel-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1763854566,
+        "narHash": "sha256-86TlGElsIdpWZT3yUy7W7LoBeBqEgGHCm9nKuo/8zLo=",
+        "owner": "gruvw",
+        "repo": "strudel.nvim",
+        "rev": "3b83511d08f3b79bb7d6beb0d6f27fd375638604",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gruvw",
+        "repo": "strudel.nvim",
         "type": "github"
       }
     },

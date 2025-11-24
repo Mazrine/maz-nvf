@@ -1,0 +1,2 @@
+2025-11-23 21:34:57.112 -03 [20695] FATAL:  database files are incompatible with server
+2025-11-23 21:34:57.112 -03 [20695] DETAIL:  The data directory was initialized by PostgreSQL version 16, which is not compatible with this version 17.6.

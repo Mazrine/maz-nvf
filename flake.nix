@@ -2,7 +2,13 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nvf.url = "github:notashelf/nvf";
-    tidalcycles.url = "github:mitchmindtree/tidalcycles.nix";  # Add the tidalcycles input
+    tidalcycles.url = "github:mitchmindtree/tidalcycles.nix";  # Adds the tidalcycles input
+strudel-nvim = {
+  url = "github:gruvw/strudel.nvim";
+  flake = false;
+};
+    # adds strudel input
+
   };
 
   outputs = { nixpkgs, tidalcycles, nvf, ... } @ inputs: {
@@ -16,6 +22,16 @@
           modules = [
             {
               config.vim = {
+                extraPlugins = {
+                  strudel-nvim = {
+                    package = pkgs.vimUtils.buildVimPlugin {
+                      pname = "strudel-nvim";
+                      version = "unstable";
+                      src = inputs.strudel-nvim;
+                    };
+                  };
+                };
+                
                 keymaps = [
                   {
                     mode = "n";
